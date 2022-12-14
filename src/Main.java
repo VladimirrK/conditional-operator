@@ -5,6 +5,8 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+        task7();
     }
 
     public static void task1() {
@@ -60,7 +62,7 @@ public class Main {
     public static void task5() {
         System.out.println("Задача 5");
         int childsAge = 15;
-        if (childsAge <5) {
+        if (childsAge < 5) {
             System.out.println("Если возраст ребенка равен " + childsAge + " то ему нельзя кататься на аттракционе");
         }
         boolean kids = childsAge >= 5 && childsAge <= 14;
@@ -69,6 +71,37 @@ public class Main {
         }
         if (childsAge > 14) {
             System.out.println("Если возраст ребенка равен " + childsAge + " то ему можно кататься на аттракционе без сопровождения взрослого");
+        }
+    }
+
+    public static void task6() {
+        System.out.println("Задача 6");
+        int passengers = 40;
+        if (passengers < 60) {
+            System.out.println("В вагоне есть сидячие и стоячие места");
+        } else if (passengers >= 60 && passengers < 102) {
+            System.out.println("В вагоне есть только стоячие места");
+        } else if (passengers == 102) {
+            System.out.println("В вагоне нет свободных мест");
+        } else {
+            System.out.println("В вагон 102 человека");
+        }
+    }
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        boolean one1 = one > two && one > three;
+        boolean two1 = two > one && two > three;
+        boolean three1 = three > one && three > two;
+        if (one1) {
+            System.out.println("" + one + " большее число");
+        } else if (two1) {
+            System.out.println("" + two + " большее число");
+        } else if (three1) {
+            System.out.println("" + three + " большее число");
         }
     }
 }
